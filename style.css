@@ -10,7 +10,7 @@
 #66625c : بني فاتح
 */
 body{
-    background-color: #bdeac8;
+    /* background-color: #bdeac8; */
     scroll-behavior: smooth;
 }
 .about{
@@ -29,6 +29,9 @@ body{
     justify-content: space-between;
     font-size: 17px;
     padding: 7px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 .navbar a{
     text-decoration: none;
@@ -44,13 +47,14 @@ body{
 
 }
 .header{
+    background-color: #bdeac8;
     color: #183f23;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 50px;
     font-family: "Italiana", serif;
 }
 .header img{
@@ -76,7 +80,7 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     height: 400px;
-    margin-top: 20%;
+    margin-top: 20px;
     padding-top: 70px;
     border-radius: 20px;
   
@@ -87,14 +91,26 @@ color:beige ;
 list-style: none;
 }
 .Education{
-    background-color: #5c7a5b;
+    background-color: #435b4d;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     height: 400px;
-    margin-top: 20%;
+    margin-top: 20px;
     padding-top: 70px;
     border-radius: 20px;
+}
+.Projects{
+   
+        background-color: #5c7a5b;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 400px;
+        margin-top: 20px;
+        padding-top: 70px;
+        border-radius: 20px;
+    
 }
 .between{
 display: flex;
@@ -119,7 +135,7 @@ color: beige;
     margin-left: 10%;
     margin-right: 10%;
     height: 700px;
-    margin-top: 20%;
+    margin-top: 20px;
     padding-top: 70px;
     border-radius: 20px;
 }
@@ -190,12 +206,6 @@ bottom: 15px;
 }
 
 
-
-
-
-
-
-
 @media (max-width: 800px){
     .navbar a{
    display: none;
@@ -255,13 +265,13 @@ grid-template-columns:350px ;
 }
 }
 .contact{
-background-color: #5c7a5b;
-width: 80%;
+background-color: #435b4d;
+width: 70%;
 color: white;
-margin-left: 10%;
-margin-right: 10%;
+margin-left: 15%;
+margin-right: 15%;
 height: 140px;
-margin-top: 20%;
+margin-top: 20px;
 padding: 20px;
 border-radius: 20px;
 display: flex;
@@ -301,6 +311,129 @@ gap: 2px;
 
 }
 
+.skills{
+    background-color: #435b4d;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 200px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.animation{
+    display: flex;
+    gap: 40px;
+    animation: square 2s 4s;
+}
+
+.html , .css{
+   color: beige;
+   padding-left: 150px;
+}
+
+.html1 , .css1{
+width: 200px;
+height: 20px;
+}
+.html2 , .css2{
+   width: 100%;
+   height: 100%;
+    animation: bower 2s 2s infinite;
+}
+
+@keyframes bower{
+ 
+0%{
+    width: 0px;
+    
+}
+
+25%{
+    width: 50px;
+    background-color: red;
+}
+    
+    50%{
+        width: 100px;
+        background-color: yellow;
+    }
+
+
+75%{
+    width: 150px;
+    background-color: rgb(45, 229, 45);
+}
+
+
+100%{
+    width: 200px;
+    background-color: green;
+}
+}
+@media(max-width: 800px){
+  .html2 , .css2{
+ animation: none;
+    }
+    .html , .css{
+      padding-left: 0;
+    }
+}
+    .footer{
+        background-color: #5c7a5b;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        position: relative;
+        
+    }
+    
+    .on-inline{
+        text-align: center;
+         color: beige;
+         font-style: italic;
+          font-size: 39px;
+    }
+    .footer{
+        background-color: #5c7a5b;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        position: relative;
+        
+    }
+    
+    .on-inline{
+        text-align: center;
+         color: beige;
+         font-style: italic;
+          font-size: 39px;
+    }
+    .footer{
+        background-color: #5c7a5b;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        position: relative;
+        
+    }
+    
+    .on-inline{
+        text-align: center;
+        color: beige;
+        font-style: italic;
+         font-size: 39px;
+   }
+
 
 
 
@@ -313,4 +446,10 @@ position: relative;
 
 }
 
+.on-inline{
+    text-align: center;
+     color: beige;
+     font-style: italic;
+      font-size: 39px;
+}
 
